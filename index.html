@@ -124,7 +124,7 @@
         var pageCookie;
         function getFromCookie() {
             if(document.cookie.split(";")[0].split("=")[1]){
-                toggle(document.cookie.split(";")[0].split("=")[1]);
+                toggle(document.getElementById(document.cookie.split(";")[0].split("=")[1]));
             }else{
                 toggle(document.getElementById("glavnaya"));
             }
