@@ -8,12 +8,12 @@
     <title>Тектум-С</title>
     <link rel="stylesheet" href="css/style.css">
 
-</head> 
+</head>
 
 <body onload="toggle(doborniye)">
     <div class="header_container">
-            <img src="res/logo.svg" onclick="toggle(glavnaya)">
-        
+        <img src="res/logo.svg" onclick="toggle(glavnaya)">
+
     </div>
     <div class="header_menu">
         <div class="header_menu_content">
@@ -37,28 +37,42 @@
     <div id="main_photo" class="photo">
 
     </div>
-    
+
     <div class="content">
         <div class="content_element" style="display: none;" id="glavnaya">Just Glavnaya</div>
         <div class="content_element" style="display: none;" id="profnastil">Just profnastil</div>
 
         <div class="content_element" style="display: none;" id="doborniye">
-            <img class="content_head_img" src="./res/dobob.png" style="width: 1200px;">
+            <img class="content_head_img" src="./res/dobob.png">
             <h2>Доборные элементы</h2>
-            <p>Основная задача доборных элементов – декорирование и защита кровельных конструкций. Они защищают крышу от излишней влаги, дополняют общий образ и повышают безопасность сооружения.</p>
-            <p>Также следует знать, что в зависимости от вида комплектующих, доборные элементы устанавливаются до или после монтажа профнастила или металлочерепицы. Карнизные планки, к примеру, устанавливаются в самом начале, в то время как фронтовую планку следует монтировать после.</p>
-            <h3>Функции доборных элементов:</h3>
-            
+            <p>Основная задача доборных элементов – декорирование и защита кровельных конструкций. Они защищают крышу от
+                излишней влаги, дополняют общий образ и повышают безопасность сооружения.</p>
+            <p>Также следует знать, что в зависимости от вида комплектующих, доборные элементы устанавливаются до или
+                после монтажа профнастила или металлочерепицы. Карнизные планки, к примеру, устанавливаются в самом
+                начале, в то время как фронтовую планку следует монтировать после.</p>
+            <div class="dobor_functions">
+                <h3>Функции доборных элементов:</h3>
+                <li>
+                    <p>Jopa</p>
+                </li>
+                <li>
+                    <p>JoPa</p>
+                </li>
+            </div>
         </div>
 
         <div class="content_element" style="display: none;" id="metallocherepica">
 
         </div>
         <div class="content_element" style="display: none;" id="gladkiy">
-            <img class="content_head_img" src="./res/gladd.png" style="width: 1200px;">
+            <img class="content_head_img" src="./res/gladd.png">
             <h2>Гладкий лист</h2>
-            <p>Главной особенностью гладкого листа является пластичность, с помощью которой можно создавать сложные конструкции и декоративные элементы для любого типа сооружений. Изготавливают его из оцинкованной стали рулонного типа, которая, по желанию заказчика, может иметь полимерное покрытие.</p>
-            <p>Добавление цинка позволяет в разы увеличить срок службы отделочного материала, а также стойко переносить резкие перепады температуры, что делает возможным его использование в различных климатических условиях.</p>
+            <p>Главной особенностью гладкого листа является пластичность, с помощью которой можно создавать сложные
+                конструкции и декоративные элементы для любого типа сооружений. Изготавливают его из оцинкованной стали
+                рулонного типа, которая, по желанию заказчика, может иметь полимерное покрытие.</p>
+            <p>Добавление цинка позволяет в разы увеличить срок службы отделочного материала, а также стойко переносить
+                резкие перепады температуры, что делает возможным его использование в различных климатических условиях.
+            </p>
 
         </div>
         <div class="content_element" style="display: none;" id="gallery">Just gallery</div>
@@ -70,17 +84,17 @@
     </div>
     <script>
         var elements = [document.getElementById("metallocherepica"), document.getElementById("profnastil")
-        ,document.getElementById("glavnaya"),document.getElementById("doborniye")
-        ,document.getElementById("gladkiy"),document.getElementById("gallery")
-        ,document.getElementById("kontakty")];
+            , document.getElementById("glavnaya"), document.getElementById("doborniye")
+            , document.getElementById("gladkiy"), document.getElementById("gallery")
+            , document.getElementById("kontakty")];
 
-        function toggle(element){
-            elements.forEach(function(element){
+        function toggle(element) {
+            elements.forEach(function (element) {
                 element.style = "display:none;";
             });
-            if(element == document.getElementById("glavnaya")){
+            if (element == document.getElementById("glavnaya")) {
                 document.getElementById("main_photo").style = "display:block;"
-            }else{
+            } else {
                 document.getElementById("main_photo").style = "display:none;"
             }
             element.style = "display: block;";
