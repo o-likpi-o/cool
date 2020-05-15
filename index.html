@@ -7,40 +7,75 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Тектум-С</title>
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body onload="getFromCookie()">
     <div class="header_container">
+        <div class="phone" style="position: absolute;">
+            <span id="vodafone" class="mobo"> (098) 465-50-84</span>
+            <span id="kyivstar" class="mobo"> (098) 465-50-84</span>
+            <span id="lifecell" class="mobo"> (098) 465-50-84</span>
+        </div>
         <img src="res/logo.svg" onclick="toggle(glavnaya)">
 
     </div>
+
+
     <div class="header_menu">
         <div class="header_menu_content">
-            <li id="glav" onclick="toggle(glavnaya)">
-                Главная</li>
-            <li id="prof" onclick="toggle(profnastil)">
-                Профнастил</li>
-            <li id="dobor" onclick="toggle(doborniye)">
-                Доборные элементы</li>
-            <li id="metall" onclick="toggle(metallocherepica)">
-                Металлочерепица</li>
-            <li id="glad" onclick="toggle(gladkiy)">
-                Гладкий лист</li>
-            <li id="gal" onclick="toggle(gallery)">
-                Галерея</li>
-            <li id="kont" onclick="toggle(kontakty)">
-                Контакты</li>
+            <li id="glav" onclick="toggle(glavnaya)">Главная</li>
+            <li id="metall" onclick="toggle(metallocherepica)">Металлочерепица</li>
+            <li id="prof" onclick="toggle(profnastil)">Профнастил</li>
+            <li id="dobor" onclick="toggle(doborniye)">Доборные элементы</li>
+            <li id="glad" onclick="toggle(gladkiy)">Гладкий лист</li>
+            <li id="gal" onclick="toggle(gallery)">Галерея</li>
+            <li id="kont" onclick="toggle(kontakty)">Контакты</li>
         </div>
     </div>
 
-    <div id="main_photo" class="photo">
-
-    </div>
+    <div id="main_photo" class="photo"> </div>
 
     <div class="content">
+
         <div class="content_element" style="display: none;" id="glavnaya">Just Glavnaya</div>
-        <div class="content_element" style="display: none;" id="profnastil">Just profnastil</div>
+
+        <div class="content_element" style="display: none;" id="profnastil">
+            <img class="content_head_img" src="./res/prof1.png">
+            <h2>Профнастил</h2>
+            <p>Основная задача доборных элементов – декорирование и защита кровельных конструкций. Они защищают крышу от
+                излишней влаги, дополняют общий образ и повышают безопасность сооружения.</p>
+            <p>Также следует знать, что в зависимости от вида комплектующих, доборные элементы устанавливаются до или
+                после монтажа профнастила или металлочерепицы. Карнизные планки, к примеру, устанавливаются в самом
+                начале, в то время как фронтовую планку следует монтировать после.</p>
+            <div class="dobor_functions">
+                <h3>Функции доборных элементов:</h3>
+                <li>
+                    <p>Улучшение внешнего вида здания;</p>
+                </li>
+                <li>
+                    <p>Защита стыков и торцов от проникновения влаги;</p>
+                </li>
+                <li>
+                    <p>Герметичность всех соединений;</p>
+                </li>
+                <li>
+                    <p>Обрамление оконных и дверных проёмов;</p>
+                </li>
+                <li>
+                    <p>Маскировка инженерных коммуникаций;</p>
+                </li>
+                <li>
+                    <p>Соединение мест стыков кровли;</p>
+                </li>
+                <li>
+                    <p>Обустройство систем снегозадержания и водоотвода;</p>
+                </li>
+                <li>
+                    <p>Повышает срок эксплуатации крыши.</p>
+                </li>
+                </div>
+
+        </div>
 
         <div class="content_element" style="display: none;" id="doborniye">
             <img class="content_head_img" src="./res/dobob.png">
@@ -52,52 +87,133 @@
                 начале, в то время как фронтовую планку следует монтировать после.</p>
             <div class="dobor_functions">
                 <h3>Функции доборных элементов:</h3>
-                <li> <p>Улучшение внешнего вида здания;</p> </li>
-                <li> <p>Защита стыков и торцов от проникновения влаги;</p> </li>
-                <li> <p>Герметичность всех соединений;</p> </li>
-                <li> <p>Обрамление оконных и дверных проёмов;</p> </li>
-                <li> <p>Маскировка инженерных коммуникаций;</p> </li>
-                <li> <p>Соединение мест стыков кровли;</p> </li>
-                <li> <p>Обустройство систем снегозадержания и водоотвода;</p> </li>
-                <li> <p>Повышает срок эксплуатации крыши.</p> </li>
+                <li>
+                    <p>Улучшение внешнего вида здания;</p>
+                </li>
+                <li>
+                    <p>Защита стыков и торцов от проникновения влаги;</p>
+                </li>
+                <li>
+                    <p>Герметичность всех соединений;</p>
+                </li>
+                <li>
+                    <p>Обрамление оконных и дверных проёмов;</p>
+                </li>
+                <li>
+                    <p>Маскировка инженерных коммуникаций;</p>
+                </li>
+                <li>
+                    <p>Соединение мест стыков кровли;</p>
+                </li>
+                <li>
+                    <p>Обустройство систем снегозадержания и водоотвода;</p>
+                </li>
+                <li>
+                    <p>Повышает срок эксплуатации крыши.</p>
+                </li>
 
-                <h3>Основные виды доборных элементов:</h3>
-                <li> <p><span>Наружный уголок</span> – устанавливается на углах дома, а также используется в качестве декоративного элемента для маскировки саморезов и краёв сайдинга;</p> </li>
-                <li> <p><span>Внутренний уголок</span> – универсальный элемент, широко используется на стыках карнизов и фасадных углов;</p> </li>
-                <li> <p><span>Планка ендовы нижняя</span> – предназначена для отвода воды с угла стыка двух скатов;</p> </li>
-                <li> <p><span>Планка ендовы верхняя</span> – закрывает срезы профилированных листов на внутренних переломах кровли;</p> </li>
-                <li> <p><span>Планка примыкания</span> – устанавливается на стыке листов металлочерепицы или профнастила, обеспечивая надёжное соединение со стеной;</p> </li>
-                <li> <p><span>Планка конька</span> – позволяет избежать срыва крыши от порывов ветра. Защищает от попадания влаги и грязи в подкровельное пространство;</p> </li>
-                <li> <p><span>Карнизная планка</span> – защищает от попадания влаги на деревянные части конструкций, направляя воду в водостоки;</p> </li>
-                <li> <p><span>Торцевая планка</span> – крепится с фронтальной стороны, позволяя уменьшить нагрузку от ветра и дождя;</p> </li>
-                <li> <p><span>Снегозадержатели</span> – служат для предотвращения сползания с крыши больших снеговых масс. Кроме того, удерживая на крыше снег, снегозадержатель способствует повышению теплоизолирующих свойств кровли.</p> </li>
-                <img style="max-width: 100%; padding-left: 0; padding-right: 0;" src="./res/dob.png">
-                <h2>Изготавливаются любые виды доборных элементов по чертежу заказчика!</h2>
-            
-            
-               
-                <div style="border: 5px solid blue; margin-left: 20px; margin-right: 20px; padding-left: 0; padding-right: 0;">
-                <table style="margin: auto; width: 100%; padding-left: 0; padding-right: 0;">
-                    <tr>
-                        <td colspan="6"; class="px30">Цвета таблицы RAL</td>
-                    </tr>
-                    <tr>
-                        <td class="px30">RAL 1015<br>Светлая слоновая кость</td> <td>RAL 3005<br>Винно-красный</td> <td>RAL 3011<br>Коричнево-красный</td> <td>RAL 6002<br>Лиственно-зеленый</td> <td>RAL 6005<br>Зеленый мох</td> <td>RAL 7004<br>Сигнальный серый</td>
-                    </tr>
-                    <tr>
-                        <td class="px30">RAL 7024<br>Графитовый серый</td> <td>RAL 8004<br>Медно-коричневый</td> <td>RAL 8017<br>Шоколадно-коричневый</td> <td>RAL 8019<br>Серо-коричневый</td> <td>RAL 9003<br>Сигнальный белый</td> <td>RAL 9006<br>Бело-алюминиевый</td>
-                    </tr>
-                </table>
-            </div>
+                <h3 class="circle_">Основные виды доборных элементов:</h3>
+                <li>
+                    <p><span>Наружный уголок</span> – устанавливается на углах дома, а также используется в качестве
+                        декоративного элемента для маскировки саморезов и краёв сайдинга;</p>
+                </li>
+                <li>
+                    <p><span>Внутренний уголок</span> – универсальный элемент, широко используется на стыках карнизов и
+                        фасадных углов;</p>
+                </li>
+                <li>
+                    <p><span>Планка ендовы нижняя</span> – предназначена для отвода воды с угла стыка двух скатов;</p>
+                </li>
+                <li>
+                    <p><span>Планка ендовы верхняя</span> – закрывает срезы профилированных листов на внутренних
+                        переломах кровли;</p>
+                </li>
+                <li>
+                    <p><span>Планка примыкания</span> – устанавливается на стыке листов металлочерепицы или профнастила,
+                        обеспечивая надёжное соединение со стеной;</p>
+                </li>
+                <li>
+                    <p><span>Планка конька</span> – позволяет избежать срыва крыши от порывов ветра. Защищает от
+                        попадания влаги и грязи в подкровельное пространство;</p>
+                </li>
+                <li>
+                    <p><span>Карнизная планка</span> – защищает от попадания влаги на деревянные части конструкций,
+                        направляя воду в водостоки;</p>
+                </li>
+                <li>
+                    <p><span>Торцевая планка</span> – крепится с фронтальной стороны, позволяя уменьшить нагрузку от
+                        ветра и дождя;</p>
+                </li>
+                <li>
+                    <p><span>Снегозадержатели</span> – служат для предотвращения сползания с крыши больших снеговых
+                        масс. Кроме того, удерживая на крыше снег, снегозадержатель способствует повышению
+                        теплоизолирующих свойств кровли.</p>
+                </li>
+                <img style="max-width: 80%; padding-left: 0; padding-right: 0; margin-top: 10px; margin-bottom: 20px;"
+                    src="./res/dob.png">
+                <h2>Наша компания изготовляет любые виды доборных элементов по чертежу заказчика!</h2>
 
-
-
-
-
+                <div
+                    style="border: 4px solid black; margin-top: 50px; margin-left: 20px; margin-right: 20px; padding-left: 0; padding-right: 0;">
+                    <table style="margin: auto; width: 100%; padding-left: 0; padding-right: 0;">
+                        <tr>
+                            <td style="background: #F4F8F4">RAL 9003<br>Сигнальный белый</td>
+                            <td style="background: #EADEBD">RAL 1015<br>Светлая слоновая кость</td>
+                            <td style="background: #A5A8A6">RAL 9006<br>Бело-алюминиевый</td>
+                            <td style="background: #9EA0A1">RAL 7004<br>Сигнальный серый</td>
+                            <td style="background: #474A50">RAL 7024<br>Графитовый серый</td>
+                            <td style="background: #3F3A3A">RAL 8019<br>Серо-коричневый</td>
+                        </tr>
+                        <tr>
+                            <td style="background: #8F4E35">RAL 8004<br>Медно-коричневый</td>
+                            <td style="background: #44322D">RAL 8017<br>Шоколадно-коричневый</td>
+                            <td style="background: #7E292C">RAL 3011<br>Коричнево-красный</td>
+                            <td style="background: #5E2028">RAL 3005<br>Винно-красный</td>
+                            <td style="background: #276235">RAL 6002<br>Лиственно-зеленый</td>
+                            <td style="background: #0F4336">RAL 6005<br>Зеленый мох</td>
+                        </tr>
+                    </table>
+                </div>
+                <p>Выбор цветов из таблицы RAL, который предлагает компания ООО "Тектум-С"</p>
             </div>
         </div>
 
-        <div class="content_element" style="display: none;" id="metallocherepica"></div>
+        <div class="content_element" style="display: none;" id="metallocherepica">
+            <img class="content_head_img content_foot_img" src="./res/met1.png">
+            <h2>Металлочерепица</h2>
+            <p>Основная задача доборных элементов – декорирование и защита кровельных конструкций. Они защищают крышу от
+                излишней влаги, дополняют общий образ и повышают безопасность сооружения.</p>
+            <p>Также следует знать, что в зависимости от вида комплектующих, доборные элементы устанавливаются до или
+                после монтажа профнастила или металлочерепицы. Карнизные планки, к примеру, устанавливаются в самом
+                начале, в то время как фронтовую планку следует монтировать после.</p>
+            <div class="dobor_functions">
+                <h3>Функции доборных элементов:</h3>
+                <li>
+                    <p>Улучшение внешнего вида здания;</p>
+                </li>
+                <li>
+                    <p>Защита стыков и торцов от проникновения влаги;</p>
+                </li>
+                <li>
+                    <p>Герметичность всех соединений;</p>
+                </li>
+                <li>
+                    <p>Обрамление оконных и дверных проёмов;</p>
+                </li>
+                <li>
+                    <p>Маскировка инженерных коммуникаций;</p>
+                </li>
+                <li>
+                    <p>Соединение мест стыков кровли;</p>
+                </li>
+                <li>
+                    <p>Обустройство систем снегозадержания и водоотвода;</p>
+                </li>
+                <li>
+                    <p>Повышает срок эксплуатации крыши.</p>
+                </li>
+                </div>
+        </div>
 
         <div class="content_element" style="display: none;" id="gladkiy">
             <img class="content_head_img" src="./res/gladd.png">
@@ -108,14 +224,94 @@
             <p>Добавление цинка позволяет в разы увеличить срок службы отделочного материала, а также стойко переносить
                 резкие перепады температуры, что делает возможным его использование в различных климатических условиях.
             </p>
+            <div class="dobor_functions">
+                <h3>Преимущества:</h3>
+                <li>
+                    <p>Небольшой вес (на перекрытие не оказывается повышенная нагрузка);</p>
+                </li>
+                <li>
+                    <p>Пластичность (можно формировать любые конструкции);</p>
+                </li>
+                <li>
+                    <p>Выдерживает резкие перепады температуры (в пределах от -60 до +120 градусов);</p>
+                </li>
+                <li>
+                    <p>Повышенная устойчивость к механическим повреждениям.</p>
+                </li>
+
+                <h3>Сферы применения:</h3>
+                <li>
+                    <p>Сырьевая база для производства кровельных и фасадных материалов (профнастил, металлочерепица,
+                        фасадные кассеты, металлосайдинг, сэндвич панели и др. материалы);</p>
+                </li>
+                <li>
+                    <p>Изготовление доборных элементов;</p>
+                </li>
+                <li>
+                    <p>Изготовление водосточных систем;</p>
+                </li>
+                <li>
+                    <p>Отделочные работы;</p>
+                </li>
+                <li>
+                    <p>Рекламная сфера (штендеры, вывески);</p>
+                </li>
+                <li>
+                    <p>Применение в машиностроении, судостроении и других отраслях.</p>
+                </li>
+            </div>
+            <img src="./res/glad.jpg" style="max-width: 500px;">
+            <div
+                style="border: 4px solid black; margin-top: 50px; margin-left: 20px; margin-right: 20px; padding-left: 0; padding-right: 0;">
+                <table style="margin: auto; width: 100%; padding-left: 0; padding-right: 0;">
+                    <tr>
+                        <td style="background: #F4F8F4">RAL 9003<br>Сигнальный белый</td>
+                        <td style="background: #EADEBD">RAL 1015<br>Светлая слоновая кость</td>
+                        <td style="background: #A5A8A6">RAL 9006<br>Бело-алюминиевый</td>
+                        <td style="background: #9EA0A1">RAL 7004<br>Сигнальный серый</td>
+                        <td style="background: #474A50">RAL 7024<br>Графитовый серый</td>
+                        <td style="background: #3F3A3A">RAL 8019<br>Серо-коричневый</td>
+                    </tr>
+                    <tr>
+                        <td style="background: #8F4E35">RAL 8004<br>Медно-коричневый</td>
+                        <td style="background: #44322D">RAL 8017<br>Шоколадно-коричневый</td>
+                        <td style="background: #7E292C">RAL 3011<br>Коричнево-красный</td>
+                        <td style="background: #5E2028">RAL 3005<br>Винно-красный</td>
+                        <td style="background: #276235">RAL 6002<br>Лиственно-зеленый</td>
+                        <td style="background: #0F4336">RAL 6005<br>Зеленый мох</td>
+                    </tr>
+                </table>
+            </div>
+            <p>Выбор цветов из таблицы RAL, который предлагает компания ООО "Тектум-С"</p>
         </div>
-        <div class="content_element" style="display: none;" id="gallery">Just gallery</div>
+
+        <div class="content_element" style="display: none;" id="gallery"></div>
+
         <div class="content_element" style="display: none;" id="kontakty">Just kontakty</div>
+
     </div>
 
     <div class="footer_container">
-
+        <div class="footer_container_content">
+            <li id="glav" onclick="toggle(glavnaya)">Главная</li>
+            <li id="metall" onclick="toggle(metallocherepica)">Металлочерепица</li>
+            <li id="prof" onclick="toggle(profnastil)">Профнастил</li>
+            <li id="dobor" onclick="toggle(doborniye)">Доборные элементы</li>
+            <li id="glad" onclick="toggle(gladkiy)">Гладкий лист</li>
+            <li id="gal" onclick="toggle(gallery)">Галерея</li>
+            <li id="kont" onclick="toggle(kontakty)">Контакты</li>
+            <hr>
+        </div>
+        <div class="phone" style="position: absolute;">
+            <span id="vodafone" class="mobo"> (098) 465-50-84</span>
+            <span id="kyivstar" class="mobo"> (098) 465-50-84</span>
+            <span id="lifecell" class="mobo"> (098) 465-50-84</span>
+        </div>
     </div>
+
+    <div class="footer_container_2"></div>
+
+
     <script>
         var elements = [document.getElementById("metallocherepica"), document.getElementById("profnastil")
             , document.getElementById("glavnaya"), document.getElementById("doborniye")
@@ -123,9 +319,9 @@
             , document.getElementById("kontakty")];
         var pageCookie;
         function getFromCookie() {
-            if(document.cookie.split(";")[0].split("=")[1]){
+            if (document.cookie.split(";")[0].split("=")[1]) {
                 toggle(document.getElementById(document.cookie.split(";")[0].split("=")[1]));
-            }else{
+            } else {
                 toggle(document.getElementById("glavnaya"));
             }
         }
@@ -138,7 +334,7 @@
             } else {
                 document.getElementById("main_photo").style = "display:none;"
             }
-            document.cookie = "page="+element.id+";max-age="+60*60*24+";";
+            document.cookie = "page=" + element.id + ";max-age=" + 60 * 60 * 24 + ";";
             element.style = "display: block;";
         }
     </script>
