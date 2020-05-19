@@ -1,7 +1,6 @@
 body {
   box-sizing: border-box;
   margin: auto;
-  /* background: rgba(230,226,231,0.3); */
   background: #ffffff;
 }
 
@@ -20,15 +19,17 @@ body {
   max-width: 1000px;
   background: #ffffff;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
 .header_container {
+  position: relative;
   display: flex;
   align-items: center;
   height: auto;
-  width: 100%;
+  max-width: 1300px;
   text-align: center;
+  margin: auto;
 }
 
 .header_container img {
@@ -38,6 +39,7 @@ body {
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
+  user-select: none;
 }
 
 .header_menu {
@@ -69,7 +71,7 @@ body {
 }
 
 .footer_container {
-  height: 150px;
+  height: 100px;
   bottom: 0px;
   background-color: #122344;
 }
@@ -82,7 +84,7 @@ body {
 .footer_container_content li {
   font-family: "Comfortaa";
   list-style-type: none;
-  font-size: 1rem;
+  font-size: 0.85rem;
   padding-top: 10px;
   padding-left: 15px;
   padding-right: 15px;
@@ -118,6 +120,11 @@ body {
 
 .content_element .content_head_img {
   width: 100%;
+  user-select: none;
+  pointer-events: none;
+}
+td div {
+  padding: 0 !important;
 }
 
 .content_element h2 {
@@ -125,9 +132,19 @@ body {
   font-family: "WalsheimBold";
 }
 
+.content_element h1 {
+  font-size: 2rem;
+  font-family: "WalsheimBold";
+  padding-top: 30px;
+  padding-bottom: 5px;
+  border-bottom: 1.5px dashed #00a0e0;
+  width: fit-content;
+  margin: auto;
+}
+
 .content_element p {
   font-family: "WalsheimReg";
-  font-size: 0.95rem;
+  font-size: 0.96rem;
   line-height: 1.35rem;
 }
 
@@ -154,6 +171,103 @@ body {
   font-family: "WalsheimBold";
 }
 
+.gallery_content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  justify-content: center;
+}
+
+.gallery_content_element {
+  border: 1px solid #ffffff;
+  width: fit-content;
+  margin: 4px 4px 4px 4px !important;
+  overflow: hidden;
+  padding: 2px 2px 2px 2px !important;
+  height: 200px !important;
+}
+
+.gallery_content_element img {
+  width: 300px;
+  padding: 0 !important;
+  margin: auto;
+  transition: 1s ease-in-out;
+  user-select: none;
+  cursor: pointer;
+}
+
+.profnastil_content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: center;
+}
+
+.profnastil_content_element {
+  width: fit-content;
+  overflow: hidden;
+  margin: 7px 7px 7px 7px !important;
+  padding: 0 !important;
+  height: 200px !important;
+  transition: 0.6s;
+}
+
+.profnastil_content_element img {
+  width: 270px;
+  padding: 0 !important;
+  margin: auto;
+  user-select: none;
+  cursor: pointer;
+}
+
+.profnastil_content_element:hover {
+  transform: scale(1.06);
+}
+
+#modal_overlay {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 20;
+  cursor: pointer;
+}
+
+#modal_inner_wrapper {
+  visibility: hidden;
+  padding: 0;
+  width: 40%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+}
+
+#modal_inner {
+  max-width: -webkit-fill-available;
+  min-width: -webkit-fill-available;
+}
+
+#cross_modal {
+  cursor: pointer;
+  position: absolute;
+  width: 3%;
+  right: -6%;
+  top: -6%;
+}
+
+.gallery_content_element img:hover {
+  transform: scale(1.2, 1.2);
+}
+
 table,
 td {
   border: 5px solid white;
@@ -173,7 +287,29 @@ td {
 .phone {
   color: black;
   vertical-align: middle;
+  text-align: left;
   padding-left: 50px;
+}
+
+.mobo {
+  font-family: "WalsheimBold";
+  font-size: 1.1rem;
+  display: block;
+  padding-top: 10px;
+}
+
+.address {
+  right: 0;
+  color: black;
+  vertical-align: middle;
+  text-align: right;
+  padding-right: 50px;
+}
+
+.add {
+  font-family: "WalsheimBold";
+  font-size: 1.1rem;
+  display: block;
 }
 
 #kyivstar::before {
@@ -191,15 +327,23 @@ td {
   content: url(./lifecell.png);
 }
 
-.mobo {
-    font-family: "WalsheimBold";
-    font-size: 1.1rem;
-    display: block;
-    padding-top: 10px;
+.circle_ ~ li {
+  list-style-type: circle;
 }
 
-.circle_ ~ li{
-    list-style-type: circle;
+.contacts_info p{
+  text-align: left; 
+  display: block; 
+  padding-left: 60px !important; 
+  font-size: 1rem;
+}
+
+.contacts_info h3{
+  font-size: 1.3rem;
+  font-family: "WalsheimBold";
+  text-align: left;
+  padding-top: 25px;
+  padding-left: 60px !important;
 }
 
 @font-face {
