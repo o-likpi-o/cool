@@ -6,7 +6,7 @@ body {
 
 .photo {
   height: 300px;
-  background: #ffffff;
+  background: #9e9e9e;
   z-index: 3;
   position: relative;
 }
@@ -331,19 +331,62 @@ td {
   list-style-type: circle;
 }
 
-.contacts_info p{
-  text-align: left; 
-  display: block; 
-  padding-left: 60px !important; 
+.contacts_info > p {
+  text-align: left;
+  display: block;
+  padding-left: 60px !important;
   font-size: 1rem;
+  /* margin-top: 10px; */
 }
 
-.contacts_info h3{
+.contacts_info h3 {
   font-size: 1.3rem;
   font-family: "WalsheimBold";
   text-align: left;
-  padding-top: 25px;
+  padding-top: 10px;
   padding-left: 60px !important;
+}
+
+.circle {
+  width: 130px;
+  height: 130px;
+  background: #122344;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  /* border: solid 2px #061533; */
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+
+.circle_container {
+  display: inline-flex;
+}
+
+.circle_inner_svg {
+  margin-top: 27%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.circle_container_inner {
+  font-family: "WalsheimBold";
+  font-size: 1.1rem;
+}
+
+#callback_form{
+  width: auto;
+  height: auto;
+  border: solid 1px black;
+}
+
+#content_details{
+  max-height: 0;
+  overflow: hidden;
+  transition: all 1s;
 }
 
 @font-face {
