@@ -389,6 +389,11 @@ td {
   transition: all 1s;
 }
 
+a{
+  text-decoration: none;
+  color: white
+}
+
 @font-face {
   font-family: "Comfortaa";
   src: url("./Comfortaa-VariableFont_wght.ttf") format("truetype");
