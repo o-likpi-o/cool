@@ -647,6 +647,7 @@
 
             <div class="contacts_info" style="padding-left: 0 !important; padding-right: 0 !important">
                 <h1>Контакты</h1>
+                <div class="contacts-info" style="padding-left: 0 !important; padding-right: 0 !important">
                 <h3 style="padding-top: 30px;">Главный офис:</h3>
                 <p style="margin-left: 10px;">Украина, г. Днепр, <br>ул. Михаила Грушевского, 55</p>
                 <h3>Адреса производственных мощностей:</h3>
@@ -671,10 +672,13 @@
                     </li>
                 </div>
                 <h3>E-mail: </h3>
-                <div>
+            </div>
+                <div class="contacts-form">
                     <p><input id="name_inp" type="text" name="name" placeholder="Ваше имя"></p>
-                    <p><input id="mail_inp" name="mail" placeholder="Адрес электронной почты"></p>
                     <p><input id="phone_inp" name="phone" placeholder="Номер телефона"></p>
+                    <p><input id="email_inp" name="email" placeholder="Адрес єлектронной почты"></p>
+                    <p><textarea id="description_inp" name="mail" placeholder="Дополнительная информация"></textarea>
+                    </p>
                     <p><input type="submit" value="Отправить" onclick="post_message()"></p>
                 </div>
                 <iframe style="padding-top: 50px; padding-left: 0 !important; padding-right: 0 !important;"
@@ -708,9 +712,22 @@
     <script>
         //form script
         function post_message() {
+            function reformat(elementId, conc) {
+                var element = document.getElementById(elementId);
+                var param = (element.value.trim() || 0 !== element.value.trim().length) ? `${(conc || '') + elementId.slice(0, -4) +'='+ element.value.trim()}` : '';
+                element.value = '';
+                return param;
+            }
             var request = new XMLHttpRequest();
-            request.open("POST", '/call_back', true);
-            request.send(`name=${document.getElementById('name_inp').value}&phone=${document.getElementById('phone_inp').value}&mail=${document.getElementById('mail_inp').value}`);
+            request.open("GET", `https://us-central1-tectum-s.cloudfunctions.net/emailMessage${reformat('name_inp','?') + reformat('phone_inp', '&') + reformat('email_inp', '&') + reformat('description_inp', '&')}`, true);
+            request.send();
+            request.onload = function () {
+                if (request.status != 200) {
+                    alert(`Упс. Какая-то странная ошибка :\ . Попробуйте ещё раз или свяжитесь с менеджером вручную.`);
+                } else {
+                    alert(`Ваша заявка отправлена! Скоро наш менеджер с вами свяжется.`);
+                }
+            };
         }
         //details script
         var opened = false;
