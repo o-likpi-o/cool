@@ -165,7 +165,7 @@ td div {
     padding-bottom: 10px;
 }
 
-.dobor_functions p {
+.dobor_functions>li>p {
     display: inline;
     padding-left: 0 !important;
 }
