@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/o-likpi-o/cool/issues"
   },
-  "homepage": "https://github.com/o-likpi-o/cool#readme"
+  "homepage": "https://github.com/o-likpi-o/cool#readme",
+  "devDependencies": {
+    "htmlhint": "^0.14.1"
+  }
 }

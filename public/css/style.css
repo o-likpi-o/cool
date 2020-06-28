@@ -469,7 +469,8 @@ a {
     text-decoration: none;
     color: white;
 }
-#profnastil_menu-header:hover > #profnastil_sub-menu{
+
+#profnastil_menu-header:hover>#profnastil_sub-menu {
     display: grid;
 }
 
@@ -481,17 +482,66 @@ a {
     padding: 0 0 10px !important;
     display: none;
     background-color: #122344;
-    box-shadow: 0 6px 8px 2px #363636;}
+    box-shadow: 0 6px 8px 2px #363636;
+}
 
 .profnastil_sub-menu_item {
     padding: 10px 0 !important;
     text-align: start;
 }
 
-.profnastil_sub-menu_item>a{
+.profnastil_sub-menu_item>a {
     font-size: 0.8rem;
     padding-right: 80px;
     color: #ececec;
+}
+
+.main_production_blocks_wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 !important;
+    justify-content: center;
+}
+
+.main_production_block {
+    padding: 15px !important;
+    position: relative;
+}
+
+.main_production_block:hover>img {
+    opacity: 0.75;
+}
+
+.main_production_block:hover>.main_block_inner {
+    width: 80%;
+}
+
+.main_block_inner {
+    position: absolute;
+    z-index: 10;
+    top: 30%;
+    left: 5px;
+    padding: 10px 0 10px 0 !important;
+    background-color: #122344;
+    width: 250px;
+    font-size: 1rem;
+    font-family: "WalsheimBold";
+    text-align: left;
+    letter-spacing: 2px;
+    transition: all 1s;
+}
+
+.main_block_inner>span {
+    display: table-cell;
+    vertical-align: middle;
+    height: 55px;
+}
+
+.main_production_block>img {
+    width: 400px;
+    padding: 0 !important;
+    transition: all 1s;
 }
 
 @font-face {
