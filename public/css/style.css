@@ -57,17 +57,18 @@ body {
     font-family: "Comfortaa";
     list-style-type: none;
     font-size: 0.9rem;
-    padding-bottom: 17px;
-    padding-top: 17px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 17px 0;
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
 }
 
-.header_menu_content li:hover {
-    color: #00a0e0;
+.header_menu_content a {
+    padding: 17px 15px;
+}
+
+a:hover {
+    color: #00a0e0 !important;
 }
 
 .footer_container {
@@ -468,21 +469,30 @@ a {
     text-decoration: none;
     color: white;
 }
-
-
-/* @media (min-width: 768px){
-header .sub-menu {
-    background: #cbb102 none repeat scroll 0 0;
-    box-shadow: 0 5px 4px 2px #202020;
-    display: none;
-    list-style-type: none;
-    padding: 20px 0;
-    position: absolute;
-    text-align: left;
-    width: 280px;
-    z-index: 20;
+#profnastil_menu-header:hover > #profnastil_sub-menu{
+    display: grid;
 }
-} */
+
+#profnastil_sub-menu {
+    position: absolute;
+    z-index: 100;
+    margin-left: 0;
+    margin-top: 17px;
+    padding: 0 0 10px !important;
+    display: none;
+    background-color: #122344;
+    box-shadow: 0 6px 8px 2px #363636;}
+
+.profnastil_sub-menu_item {
+    padding: 10px 0 !important;
+    text-align: start;
+}
+
+.profnastil_sub-menu_item>a{
+    font-size: 0.8rem;
+    padding-right: 80px;
+    color: #ececec;
+}
 
 @font-face {
     font-family: "Comfortaa";
