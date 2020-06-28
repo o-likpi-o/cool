@@ -16,7 +16,7 @@
             <span id="kyivstar" class="mobo"> (067) 441-01-64</span>
             <span id="lifecell" class="mobo"> (050) 482-80-37</span>
         </div>
-        <a href="./index"><img src="res/logo.svg" style="width: inherit;"></a> 
+        <a href="./index"><img src="res/logo.svg" style="width: inherit;"></a>
         <div class="address" style="position: absolute;">
             <div class="add">
                 <p>г. Днепр,<br>ул. Михаила Грушевского, 55</p>
@@ -36,7 +36,19 @@
         <div class="header_menu_content">
             <li><a href="./index">Главная</a></li>
             <li><a href="./metallocherepitsa">Металлочерепица</a></li>
-            <li><a href="./profnastil">Профнастил</a>
+            <li id="profnastil_menu-header"><a href="./profnastil">Профнастил</a>
+                <ul id="profnastil_sub-menu">
+                    <li class="profnastil_sub-menu_item"><a href="./profnastil/C-8">Профнастил С-8</a></li>
+                    <li class="profnastil_sub-menu_item"><a href="./profnastil/C-10">Профнастил С-10</a></li>
+                    <li class="profnastil_sub-menu_item"><a href="./profnastil/C-15">Профнастил С-15</a></li>
+                    <li class="profnastil_sub-menu_item"><a href="./profnastil/HC-20">Профнастил НС-20</a></li>
+                    <li class="profnastil_sub-menu_item"><a href="./profnastil/HC-35">Профнастил НС-35</a></li>
+                    <li class="profnastil_sub-menu_item"><a href="./profnastil/HC-44">Профнастил НС-44</a></li>
+                    <li class="profnastil_sub-menu_item"><a href="./profnastil/H-57">Профнастил Н-57</a></li>
+                    <li class="profnastil_sub-menu_item"><a href="./profnastil/H-60">Профнастил Н-60</a></li>
+                    <li class="profnastil_sub-menu_item"><a href="./profnastil/H-75">Профнастил Н-75</a></li>
+                </ul>
+            </li>
             <li><a href="./dobornye_elementy">Доборные элементы</a></li>
             <li><a href="./gladkiy_list">Гладкий лист</a></li>
             <li><a href="./gallery">Галерея</a></li>
@@ -108,7 +120,7 @@
             id="modal_inner" src=""></div>
 
     <script>
-        
+
         //gallery script
         function onImageHuge(path) {
             document.getElementById(`modal_overlay`).style.visibility = 'visible'
