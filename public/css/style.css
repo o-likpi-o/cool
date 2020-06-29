@@ -24,15 +24,15 @@ body {
     height: 100%;
 }
 
-.slick-list{
+.slick-list {
     height: 100%;
 }
 
-.slick-track{
+.slick-track {
     height: 100%;
 }
 
-.slick-slide{
+.slick-slide {
     outline: none;
     height: 100%;
 }
@@ -127,16 +127,18 @@ i:hover {
     user-select: none;
 }
 
-.footer_container_content li {
+.footer_container_content>li {
     font-family: "Comfortaa";
     list-style-type: none;
     font-size: 0.85rem;
     padding-top: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
+}
+
+.footer_container_content>li>a {
+    padding: 10px 15px 8px;
 }
 
 .footer_container_2 {
@@ -241,7 +243,10 @@ td div {
     width: 300px;
     padding: 0 !important;
     margin: auto;
-    transition: 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
     user-select: none;
     cursor: pointer;
 }
@@ -261,7 +266,10 @@ td div {
     margin: 7px 7px 7px 7px !important;
     padding: 0 !important;
     height: 200px !important;
-    transition: 0.6s;
+    transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -o-transition: all 0.6s;
     position: relative;
 }
 
@@ -508,6 +516,9 @@ p>textarea {
     max-height: 0;
     overflow: hidden;
     transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
 }
 
 a {
@@ -522,6 +533,9 @@ a {
 #profnastil_menu-header:hover>#profnastil_sub-menu,
 #profnastil_sub-menu:hover {
     transition: transform 0.5s, opacity 1s;
+    -webkit-transition: transform 0.5s, opacity 1s;
+    -moz-transition: transform 0.5s, opacity 1s;
+    -o-transition: transform 0.5s, opacity 1s;
     opacity: 1;
     transform: scaleY(1);
 }
@@ -529,6 +543,9 @@ a {
 #profnastil_menu-header:not(:hover)>#profnastil_sub-menu,
 #profnastil_sub-menu:not(:hover) {
     transition: transform 0.75s, opacity 0.3s;
+    -webkit-transition: transform 0.75s, opacity 0.3s;
+    -moz-transition: transform 0.75s, opacity 0.3s;
+    -o-transition: transform 0.75s, opacity 0.3s;
 }
 
 #profnastil_sub-menu {
@@ -583,6 +600,9 @@ a {
 
 .main_block_inner>i {
     transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
 }
 
 .main_block_inner {
@@ -598,6 +618,9 @@ a {
     text-align: left;
     letter-spacing: 2px;
     transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
@@ -614,11 +637,17 @@ a {
     width: 400px;
     padding: 0 !important;
     transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
 }
 
 .main_block_inner:hover~#profnastil_sub-menu_prod,
 #profnastil_sub-menu_prod:hover {
     transition: transform 0.5s, opacity 1s;
+    -webkit-transition: transform 0.5s, opacity 1s;
+    -moz-transition: transform 0.5s, opacity 1s;
+    -o-transition: transform 0.5s, opacity 1s;
     opacity: 1;
     transform: scaleY(1);
 }
@@ -626,6 +655,9 @@ a {
 .main_block_inner:not(:hover)~#profnastil_sub-menu_prod,
 #profnastil_sub-menu_prod:not(:hover) {
     transition: transform 0.75s, opacity 0.3s;
+    -webkit-transition: transform 0.75s, opacity 0.3s;
+    -moz-transition: transform 0.75s, opacity 0.3s;
+    -o-transition: transform 0.75s, opacity 0.3s;
 }
 
 #profnastil_sub-menu_prod {
@@ -659,7 +691,7 @@ a {
     font-size: 0.9rem;
 }
 
-.price_block{
+.price_block {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
@@ -671,14 +703,17 @@ a {
     border-radius: 20px;
     border: solid 4px #00a0e0;
     transition: transform 1s;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -o-transition: transform 1s;
 }
 
-.price_block:hover{
+.price_block:hover {
     color: white !important;
     transform: scale(0.97);
 }
 
-.price_block>h3{
+.price_block>h3 {
     margin: 0;
 }
 
