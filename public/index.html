@@ -227,36 +227,8 @@
             id="modal_inner" src=""></div>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
-        $('.photo').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: true,
-            fade: false,
-            adaptiveHeight: true,
-            useTransform: true,
-            speed: 400,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            nextArrow: '<i class="slick-btn slick-next fa fa-angle-right fa-2x" aria-hidden="true"></i>',
-            prevArrow: '<i class="slick-btn slick-prev fa fa-angle-left fa-2x" aria-hidden="true"></i>',
-            cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
-        });
-        //details script
-        var opened = false;
-        function toggleDetails() {
-            if (!opened) {
-                document.getElementById('content_details_header').innerHTML = "скрыть"
-                document.getElementById('content_details').style.maxHeight = '200px'
-                opened = true
-            } else {
-                document.getElementById('content_details_header').innerHTML = "подробнее..."
-                document.getElementById('content_details').style.maxHeight = '0'
-                opened = false
-            }
-        }
-
-    </script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/slick_photos.js"></script>
 </body>
 
 </html>

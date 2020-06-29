@@ -7,6 +7,10 @@
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <title>Галерея производства профнастила и металлочерепицы в Днепре</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/mobile_redirect.js"></script>
+    <script>SA.redirection_mobile({
+            mobile_prefix: "m"
+        });</script>
 </head>
 
 <body>
@@ -122,25 +126,8 @@
     <div id="modal_inner_wrapper"><img onclick="closeModal()" id="cross_modal" src="./res/gallery_cross.svg" alt=""><img
             id="modal_inner" src=""></div>
 
-    <script>
+    <script type="text/javascript" src="./js/main.js"></script>
 
-        //gallery script
-        function onImageHuge(path) {
-            document.getElementById(`modal_overlay`).style.visibility = 'visible'
-            const el = document.getElementById('modal_inner')
-            el.src = path;
-            el.style.visibility = 'visible'
-            document.getElementById(`cross_modal`).style.visibility = 'visible'
-        }
-
-        function closeModal() {
-            document.getElementById(`modal_inner`).style.visibility = 'hidden'
-            document.getElementById(`cross_modal`).style.visibility = 'hidden'
-            document.getElementById('modal_inner_wrapper').style.visibility = 'hidden'
-            document.getElementById(`modal_overlay`).style.visibility = 'hidden'
-        }
-
-    </script>
 </body>
 
 </html>
