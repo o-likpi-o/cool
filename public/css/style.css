@@ -8,17 +8,50 @@ body {
     height: 350px;
     z-index: 3;
     position: relative;
+    outline: none;
+    border: 0;
 }
 
 .photo h3 {
-	background: #f0f0f0;
-	color: #3498db;
-	font-size: 2.25rem;
-	margin: .5rem;
-	padding: 2%;
-	position: relative;
+    background: #f0f0f0;
+    color: #3498db;
+    font-size: 2.25rem;
+    position: relative;
     text-align: center;
-    line-height: 15rem;
+    line-height: 350px;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100%;
+}
+
+.slick-list{
+    height: 100%;
+}
+
+.slick-track{
+    height: 100%;
+}
+
+.slick-slide{
+    outline: none;
+    height: 100%;
+}
+
+.slick-btn {
+    position: absolute;
+    z-index: 50;
+    top: 0;
+    cursor: pointer;
+}
+
+.slick-next {
+    padding: 160px 0 160px 70px !important;
+    right: 10%;
+}
+
+.slick-prev {
+    left: 10%;
+    padding: 160px 70px 160px 0 !important
 }
 
 .content {
