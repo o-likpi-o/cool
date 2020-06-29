@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Тектум-С - производитель профнастила и металлочерепицы в Днепре</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>
 <script src="https://use.fontawesome.com/d966391b3f.js"></script>
 
@@ -61,7 +62,38 @@
         </div>
     </div>
 
-    <div id="main_photo" class="photo"> </div>
+    <div id="main_photo" class="photo">
+        <div>
+            <h3>1</h3>
+        </div>
+        <div>
+            <h3>2</h3>
+        </div>
+        <div>
+            <h3>3</h3>
+        </div>
+        <div>
+            <h3>4</h3>
+        </div>
+        <div>
+            <h3>5</h3>
+        </div>
+        <div>
+            <h3>6</h3>
+        </div>
+        <div>
+            <h3>7</h3>
+        </div>
+        <div>
+            <h3>8</h3>
+        </div>
+        <div>
+            <h3>9</h3>
+        </div>
+        <div>
+            <h3>10</h3>
+        </div>
+    </div>
 
     <div class="content">
         <div class="content_element" id="glavnaya">
@@ -110,16 +142,16 @@
                         <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
                     </a>
                     <ul id="profnastil_sub-menu_prod">
-                    <li class="profnastil_sub-menu_item_prod"><a href="./profnastil/C-8">Профнастил С-8</a></li>
-                    <li class="profnastil_sub-menu_item_prod"><a href="./profnastil/C-10">Профнастил С-10</a></li>
-                    <li class="profnastil_sub-menu_item_prod"><a href="./profnastil/C-15">Профнастил С-15</a></li>
-                    <li class="profnastil_sub-menu_item_prod"><a href="./profnastil/HC-20">Профнастил НС-20</a></li>
-                    <li class="profnastil_sub-menu_item_prod"><a href="./profnastil/HC-35">Профнастил НС-35</a></li>
-                    <li class="profnastil_sub-menu_item_prod"><a href="./profnastil/HC-44">Профнастил НС-44</a></li>
-                    <li class="profnastil_sub-menu_item_prod"><a href="./profnastil/H-57">Профнастил Н-57</a></li>
-                    <li class="profnastil_sub-menu_item_prod"><a href="./profnastil/H-60">Профнастил Н-60</a></li>
-                    <li class="profnastil_sub-menu_item_prod"><a href="./profnastil/H-75">Профнастил Н-75</a></li>
-                </ul>
+                        <li class="profnastil_sub-menu_item_prod"><a href="./profnastil/C-8">Профнастил С-8</a></li>
+                        <li class="profnastil_sub-menu_item_prod"><a href="./profnastil/C-10">Профнастил С-10</a></li>
+                        <li class="profnastil_sub-menu_item_prod"><a href="./profnastil/C-15">Профнастил С-15</a></li>
+                        <li class="profnastil_sub-menu_item_prod"><a href="./profnastil/HC-20">Профнастил НС-20</a></li>
+                        <li class="profnastil_sub-menu_item_prod"><a href="./profnastil/HC-35">Профнастил НС-35</a></li>
+                        <li class="profnastil_sub-menu_item_prod"><a href="./profnastil/HC-44">Профнастил НС-44</a></li>
+                        <li class="profnastil_sub-menu_item_prod"><a href="./profnastil/H-57">Профнастил Н-57</a></li>
+                        <li class="profnastil_sub-menu_item_prod"><a href="./profnastil/H-60">Профнастил Н-60</a></li>
+                        <li class="profnastil_sub-menu_item_prod"><a href="./profnastil/H-75">Профнастил Н-75</a></li>
+                    </ul>
                 </div>
                 <div class="main_production_block">
                     <img src="./res/metallocherepiza.JPG">
@@ -183,8 +215,22 @@
     <div id="modal_overlay" onclick="closeModal()"></div>
     <div id="modal_inner_wrapper"><img onclick="closeModal()" id="cross_modal" src="./res/gallery_cross.svg" alt=""><img
             id="modal_inner" src=""></div>
-
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
+        $('.photo').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            fade: false,
+            adaptiveHeight: true,
+            infinite: false,
+            useTransform: true,
+            speed: 400,
+            nextArrow: '<button type ="button" class="slick-btn slick-next"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></button>',
+            prevArrow: '<button type ="button" class="slick-btn slick-prev"><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></button>',
+            cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
+        });
         //details script
         var opened = false;
         function toggleDetails() {
