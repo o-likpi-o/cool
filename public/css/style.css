@@ -67,7 +67,8 @@ body {
     padding: 17px 15px;
 }
 
-a:hover {
+a:hover,
+i:hover {
     color: #00a0e0 !important;
 }
 
@@ -474,14 +475,29 @@ a {
     display: grid;
 }
 
+#profnastil_menu-header:hover>#profnastil_sub-menu,
+#profnastil_sub-menu:hover {
+    transition: transform 0.5s, opacity 1s;
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+#profnastil_menu-header:not(:hover)>#profnastil_sub-menu,
+#profnastil_sub-menu:not(:hover) {
+    transition: transform 0.75s, opacity 0.3s;
+}
+
 #profnastil_sub-menu {
     position: absolute;
+    display: grid;
     z-index: 100;
     margin-left: 0;
     margin-top: 17px;
     padding: 0 0 10px !important;
-    display: none;
     background-color: #122344;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
     box-shadow: 0 6px 8px 2px #363636;
 }
 
@@ -517,10 +533,18 @@ a {
     width: 80%;
 }
 
+.main_block_inner:hover>i {
+    transform: rotate(0.25turn);
+}
+
+.main_block_inner>i {
+    transition: transform 0.5s;
+}
+
 .main_block_inner {
     position: absolute;
     z-index: 10;
-    top: 30%;
+    top: 75px;
     left: 5px;
     padding: 10px 0 10px 0 !important;
     background-color: #122344;
@@ -530,11 +554,15 @@ a {
     text-align: left;
     letter-spacing: 2px;
     transition: all 1s;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .main_block_inner>span {
-    display: table-cell;
+    display: grid;
     vertical-align: middle;
+    align-items: center;
     height: 55px;
 }
 
@@ -542,6 +570,49 @@ a {
     width: 400px;
     padding: 0 !important;
     transition: all 1s;
+}
+
+.main_block_inner:hover~#profnastil_sub-menu_prod,
+#profnastil_sub-menu_prod:hover {
+    transition: transform 0.5s, opacity 1s;
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.main_block_inner:not(:hover)~#profnastil_sub-menu_prod,
+#profnastil_sub-menu_prod:not(:hover) {
+    transition: transform 0.75s, opacity 0.3s;
+}
+
+#profnastil_sub-menu_prod {
+    position: absolute;
+    padding: 0 !important;
+    z-index: 100;
+    margin-left: 0;
+    top: 150px;
+    background-color: #122344;
+    left: 5px;
+    overflow: hidden;
+    transform-origin: top;
+    opacity: 0;
+    transform: scaleY(0);
+}
+
+.profnastil_sub-menu_item_prod {
+    padding: 10px 0 !important;
+    text-align: start;
+    font-family: "Comfortaa";
+    list-style-type: none;
+    font-size: 0.9rem;
+}
+
+.profnastil_sub-menu_item_prod>a {
+    font-size: 0.8rem;
+    padding-right: 80px;
+    color: #ececec;
+    padding: 10px 90px 10px 20px !important;
+    font-family: "Comfortaa";
+    font-size: 0.9rem;
 }
 
 @font-face {
