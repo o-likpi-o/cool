@@ -119,6 +119,7 @@ i:hover {
     height: 100px;
     bottom: 0px;
     background-color: #122344;
+    text-align: center;
 }
 
 .footer_container_content {
@@ -656,6 +657,29 @@ a {
     padding: 10px 90px 10px 20px !important;
     font-family: "Comfortaa";
     font-size: 0.9rem;
+}
+
+.price_block{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #122344;
+    padding: 20px 0;
+    margin: 50px 0 0 0;
+    font-family: "Comfortaa";
+    font-size: 0.9rem;
+    border-radius: 20px;
+    border: solid 4px #00a0e0;
+    transition: transform 1s;
+}
+
+.price_block:hover{
+    color: white !important;
+    transform: scale(0.97);
+}
+
+.price_block>h3{
+    margin: 0;
 }
 
 @font-face {

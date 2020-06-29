@@ -8,6 +8,10 @@
     <title>Тектум-С - производитель профнастила и металлочерепицы в Днепре</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="./js/mobile_redirect.js"></script>
+    <script>SA.redirection_mobile({
+            mobile_prefix: "m"
+        });</script>
 </head>
 <script src="https://use.fontawesome.com/d966391b3f.js"></script>
 
@@ -133,6 +137,9 @@
                     <div style="margin-top: 8px;">Доступные цены от<br>производителя</div>
                 </div>
             </div>
+            <a class="price_block" href="./tecum_price.pdf">
+                <h3>Посмотреть прайс с актуальными ценами</h3>
+            </a>
             <h2 style="padding-top: 50px;">Наша продукция</h2>
             <div class="main_production_blocks_wrapper">
                 <div class="main_production_block">
@@ -192,7 +199,7 @@
                     производить качественный, долговечный материал.</p>
                 <p style="padding-top: 10px;">Будем рады видеть Вас в числе наших клиентов!</p>
             </div>
-            <h3 style="color: #4d4d4d; font-family: 'Comfortaa'; font-size: 0.9rem;  cursor: pointer;"
+            <h3 style="color: #4d4d4d; font-family: 'Comfortaa'; font-size: 0.9rem;  cursor: pointer; user-select: none;"
                 id="content_details_header" onclick="toggleDetails()">подробнее...</h3>
         </div>
     </div>
@@ -208,6 +215,9 @@
             <li><a href="./contacts">Контакты</a></li>
             <hr>
         </div>
+        <a style="margin: 0; padding: 10px 70px;" class="price_block" href="./tecum_price.pdf">
+            <h3>Прайс</h3>
+        </a>
     </div>
 
     <div class="footer_container_2"></div>
@@ -226,6 +236,8 @@
             adaptiveHeight: true,
             useTransform: true,
             speed: 400,
+            autoplay: true,
+            autoplaySpeed: 3000,
             nextArrow: '<i class="slick-btn slick-next fa fa-angle-right fa-2x" aria-hidden="true"></i>',
             prevArrow: '<i class="slick-btn slick-prev fa fa-angle-left fa-2x" aria-hidden="true"></i>',
             cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
