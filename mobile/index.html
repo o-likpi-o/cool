@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 
-<head><meta http-equiv="Cache-Control" content="no-cache">
-<meta http-equiv="Cache-Control" content="max-age=300, must-revalidate">
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Cache-Control" content="max-age=300, must-revalidate">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,7 +54,9 @@
         <div class="header_menu_content">
             <li><a href="./index">Главная</a></li>
             <li><a href="./metallocherepitsa">Металлочерепица</a></li>
-            <li id="profnastil_menu-header"><a onclick="toggleScaleById('profnastil_sub-menu')">Профнастил</a>
+            <li id="profnastil_menu-header"><a onclick="toggleScaleById('profnastil_sub-menu')"><i
+                        class="fa fa-angle-down fa-lg" aria-hidden="true"
+                        style="padding-right: 20px;"></i>Профнастил</a>
                 <ul id="profnastil_sub-menu">
                     <li class="profnastil_sub-menu_item"><a href="./profnastil">Общая информация</a></li>
                     <li class="profnastil_sub-menu_item"><a href="./profnastil/C-8">Профнастил С-8</a></li>
@@ -139,7 +142,9 @@
                     <img alt="Профнастил компании Тектум-С" src="./res/profnastil.JPG">
                     <div class="main_block_inner">
                         <a href="./profnastil">Профнастил</a>
-                        <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+                        <i id="prod_angle"
+                            onclick="toggleScaleHeightAndRotate('profnastil_sub-menu_prod', 'prod_angle')"
+                            class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
                     </div>
                     <ul id="profnastil_sub-menu_prod">
                         <li class="profnastil_sub-menu_item_prod"><a href="./profnastil/C-8">Профнастил С-8</a></li>
@@ -236,12 +241,6 @@
     </div>
 
     <div class="footer_container">
-        <a style="margin: 10px; padding: 10px 70px;" class="price_block" href="./tecum_price.pdf">
-            <h3>Прайс</h3>
-        </a>
-    </div>
-
-    <div class="footer_container_2">
         <div class="phone">
             <span id="vodafone" class="mobo"> (050) 363-79-87</span>
             <span id="kyivstar" class="mobo"> (067) 441-01-64</span>
@@ -250,10 +249,15 @@
         <div class="address">
             <div class="add">
                 <p>г. Днепр,<br>ул. Михаила Грушевского, 55</p>
-                <p><i class="fa fa-envelope" aria-hidden="true" style="padding-right: 10px;"></i>4410164@ukr.net</p>
+                <p style="padding-bottom: 10px; margin-bottom: 0 !important;"><i class="fa fa-envelope" aria-hidden="true" style="padding-right: 10px;"></i>4410164@ukr.net</p>
             </div>
-
         </div>
+    </div>
+
+    <div class="footer_container_2">
+        <a style="margin: 10px; padding: 10px 70px;" class="price_block" href="./tecum_price.pdf">
+            <h3>Прайс</h3>
+        </a>
     </div>
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

@@ -1,10 +1,25 @@
+function tapAnywhereExcept(el, elRotate) {
+    document.getElementsByTagName('body')[0].addEventListener("click", function () {
+        elRotate.classList.remove('rotate');
+        el.classList.remove('scaleY');
+    }, false);
+    el.addEventListener("click", function (ev) {
+        ev.stopPropagation();
+    }, false);
+}
 //scale script
-function toggleScaleByClassName(name){
+function toggleScaleByClassName(name) {
     document.getElementsByClassName(name)[0].classList.toggle('scale_header');
 }
-function toggleScaleById(id){
+function toggleScaleById(id) {
     document.getElementById(id).classList.toggle('scale_header');
 }
+function toggleScaleHeightAndRotate(id, rId) {
+    document.getElementById(id).classList.toggle('scaleY');
+    document.getElementById(rId).classList.toggle('rotate');
+    //tapAnywhereExcept(document.getElementById(id), document.getElementById(rId));
+}
+
 //details script
 var opened = false;
 function toggleDetails() {
