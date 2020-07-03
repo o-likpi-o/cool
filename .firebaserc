@@ -1,5 +1,17 @@
 {
   "projects": {
     "default": "tectum-s"
+  },
+  "targets": {
+    "tectum-s": {
+      "hosting": {
+        "desktop": [
+          "tectum-s"
+        ],
+        "mobile": [
+          "tectum-mobile"
+        ]
+      }
+    }
   }
 }

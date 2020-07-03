@@ -1,0 +1,754 @@
+html{
+    background-color: #061533;
+}
+body {
+    box-sizing: border-box;
+    margin: auto;
+    background: #ffffff;
+}
+
+.photo {
+    height: 350px;
+    z-index: 3;
+    position: relative;
+    outline: none;
+    border: 0;
+}
+
+.photo h3 {
+    background: #f0f0f0;
+    color: #3498db;
+    font-size: 2.25rem;
+    position: relative;
+    text-align: center;
+    line-height: 350px;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100%;
+}
+
+.slick-list {
+    height: 100%;
+}
+
+.slick-track {
+    height: 100%;
+}
+
+.slick-slide {
+    outline: none;
+    height: 100%;
+}
+
+.slick-btn {
+    position: absolute;
+    z-index: 50;
+    top: 0;
+    cursor: pointer;
+}
+
+.slick-next {
+    padding: 160px 0 160px 70px !important;
+    right: 10%;
+}
+
+.slick-prev {
+    left: 10%;
+    padding: 160px 70px 160px 0 !important
+}
+
+.content {
+    height: auto;
+    float: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 1000px;
+    background: #ffffff;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    padding-bottom: 30px;
+}
+
+.header_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: auto;
+    max-width: 1300px;
+    text-align: center;
+    margin: auto;
+}
+
+.header_container a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 125px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    user-select: none;
+}
+
+.header_menu {
+    background-color: #122344;
+    height: initial;
+    width: 100%;
+    text-align: right;
+}
+
+.header_menu_content {
+    user-select: none;
+    background-color: #122344;
+    z-index: 90;
+    height: 0;
+    display: grid;
+}
+
+.header_menu_content li {
+    font-family: "Comfortaa";
+    list-style-type: none;
+    font-size: 0.9rem;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    border-top: solid 1px white;
+}
+
+.header_menu_content a,
+.header_menu_content>li>div {
+    display: block;
+    padding: 17px 0;
+    width: 90%;
+}
+
+a:hover,
+i:hover {
+    color: #00a0e0 !important;
+}
+
+.footer_container {
+    background-color: #122344;
+    text-align: center;
+}
+
+.footer_container_content {
+    text-align: center;
+    user-select: none;
+}
+
+.footer_container_content>li {
+    font-family: "Comfortaa";
+    list-style-type: none;
+    font-size: 0.85rem;
+    padding-top: 10px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.footer_container_content>li>a {
+    padding: 10px 15px 8px;
+}
+
+.footer_container_2 {
+    bottom: 0px;
+    background-color: #061533;
+}
+
+.content_element {
+    margin-top: 0;
+    text-align: center;
+}
+
+.content_element * {
+    margin-top: inherit;
+}
+
+.content_element :not(.content_head_img) {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.dobor_functions span {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.content_element .content_head_img {
+    width: 100%;
+    user-select: none;
+    pointer-events: none;
+}
+
+td div {
+    padding: 0 !important;
+}
+
+.content_element h2 {
+    font-size: 1.9rem;
+    font-family: "WalsheimBold";
+}
+
+.content_element h1 {
+    font-size: 2rem;
+    font-family: "WalsheimBold";
+    padding-top: 30px;
+    padding-bottom: 5px;
+    border-bottom: 1.5px dashed #00a0e0;
+    width: fit-content;
+    margin: auto;
+}
+
+.content_element p {
+    font-family: "WalsheimReg";
+    font-size: 0.96rem;
+    line-height: 1.35rem;
+}
+
+.dobor_functions h3 {
+    font-size: 1.5rem;
+    font-family: "WalsheimBold";
+    text-align: left;
+    padding-top: 23px;
+    padding-left: 60px !important;
+}
+
+.dobor_functions li {
+    text-align: left;
+    list-style-type: disc;
+    padding-left: 100px !important;
+    padding-bottom: 10px;
+}
+
+.dobor_functions>li>p {
+    display: inline;
+    padding-left: 0 !important;
+}
+
+.dobor_functions li span {
+    font-family: "WalsheimBold";
+}
+
+.dobor_mobile li {
+    padding-left: 20px !important;
+}
+
+.gallery_content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+
+.gallery_content_element {
+    border: 1px solid #ffffff;
+    width: fit-content;
+    margin: 4px 4px 4px 4px !important;
+    overflow: hidden;
+    padding: 2px 2px 2px 2px !important;
+    height: 200px !important;
+}
+
+.gallery_content_element img {
+    width: 300px;
+    padding: 0 !important;
+    margin: auto;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    user-select: none;
+    cursor: pointer;
+}
+
+.profnastil_content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+
+.profnastil_content_element {
+    width: fit-content;
+    overflow: hidden;
+    margin: 7px 7px 7px 7px !important;
+    padding: 0 !important;
+    height: 200px !important;
+    transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    position: relative;
+}
+
+.profnastil_content_element img {
+    width: 250px;
+    padding: 0 !important;
+    margin: auto;
+    user-select: none;
+    cursor: pointer;
+}
+
+.profnastil_content_element:hover {
+    transform: scale(1.06);
+}
+
+.profnastil_content_element_label {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #122344;
+    color: white;
+    font-family: "WalsheimReg";
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    height: 27%;
+}
+
+.profnastil_content_element_label>div {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: auto;
+}
+
+
+/* .profnastil_content_element:hover > .profnastil_content_element_label {
+  height: 0;
+} */
+
+#modal_overlay {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 20;
+    cursor: pointer;
+}
+
+#modal_inner_wrapper {
+    visibility: hidden;
+    padding: 0;
+    width: 40%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+}
+
+#modal_inner {
+    max-width: -webkit-fill-available;
+    min-width: -webkit-fill-available;
+}
+
+#cross_modal {
+    cursor: pointer;
+    position: absolute;
+    width: 3%;
+    right: -6%;
+    top: -6%;
+}
+
+.gallery_content_element img:hover {
+    transform: scale(1.2, 1.2);
+}
+
+table,
+td {
+    border: 5px solid white;
+}
+
+table {
+    max-width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 20px;
+    max-width: 50px;
+    word-wrap: break-word;
+}
+
+.phone {
+    padding-left: 20px;
+    color: white;
+}
+
+.mobo {
+    font-family: "WalsheimBold";
+    font-size: 1.1rem;
+    display: block;
+    padding-top: 10px;
+}
+
+.address {
+    padding-left: 20px;
+    color: white;
+}
+
+.add {
+    font-family: "WalsheimBold";
+    font-size: 1.1rem;
+    display: block;
+}
+
+#kyivstar::before {
+    padding-right: 5px;
+    content: url(./kyivstar.png);
+}
+
+#vodafone::before {
+    padding-right: 5px;
+    content: url(./vodafone.png);
+}
+
+#lifecell::before {
+    padding-right: 5px;
+    content: url(./lifecell.png);
+}
+
+.circle_~li {
+    list-style-type: circle;
+}
+
+#mail_my {
+    font-family: "WalsheimReg";
+    font-size: 1.1rem;
+    line-height: 1.35rem;
+    padding-left: 0 !important;
+}
+
+.contacts-form {
+    padding: 30px 60px !important;
+}
+
+p>input {
+    width: 270px;
+    height: 30px;
+}
+
+:required {
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+
+.touched:required:valid {
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+
+.touched:required:invalid {
+    border-radius: 3px;
+    border: 2px solid red;
+}
+
+p>textarea {
+    width: 270px;
+    height: 100px;
+    resize: none;
+    font: 400 13.3333px Arial;
+    padding-top: 6px;
+}
+
+.contacts_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contacts_info>p {
+    text-align: left;
+    display: block;
+    padding-left: 60px !important;
+    font-size: 1rem;
+    /* margin-top: 10px; */
+}
+
+.contacts_info h3 {
+    font-size: 1.3rem;
+    font-family: "WalsheimBold";
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 60px !important;
+}
+
+.circle {
+    width: 125px;
+    height: 125px;
+    background: #122344;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    /* border: solid 2px #061533; */
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+.circle_container {
+    display: inline-block;
+}
+
+.circle_inner_svg {
+    margin-top: 27%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.circle_container_inner {
+    font-family: "WalsheimBold";
+    font-size: 1.1rem;
+}
+
+#callback_form {
+    width: auto;
+    height: auto;
+    border: solid 1px black;
+}
+
+#content_details {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#profnastil_menu-header:hover>#profnastil_sub-menu {
+    display: grid;
+}
+
+#profnastil_menu-header:hover>#profnastil_sub-menu,
+#profnastil_sub-menu:hover {
+    transition: transform 0.5s, opacity 1s;
+    -webkit-transition: transform 0.5s, opacity 1s;
+    -moz-transition: transform 0.5s, opacity 1s;
+    -o-transition: transform 0.5s, opacity 1s;
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+#profnastil_menu-header:not(:hover)>#profnastil_sub-menu,
+#profnastil_sub-menu:not(:hover) {
+    transition: transform 0.75s, opacity 0.3s;
+    -webkit-transition: transform 0.75s, opacity 0.3s;
+    -moz-transition: transform 0.75s, opacity 0.3s;
+    -o-transition: transform 0.75s, opacity 0.3s;
+}
+
+#profnastil_sub-menu {
+    margin: 0;
+    background-color: #122344;
+    height: 0;
+    overflow: hidden;
+}
+
+.profnastil_sub-menu_item {
+    border: none !important;
+}
+
+.profnastil_sub-menu_item>a {
+    font-size: 0.8rem;
+    color: #ececec;
+}
+
+.main_production_blocks_wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 !important;
+    justify-content: center;
+}
+
+.main_production_block {
+    padding: 15px !important;
+    position: relative;
+}
+
+.main_production_block:hover>img {
+    opacity: 0.75;
+}
+
+.main_production_block:hover>.main_block_inner {
+    width: 80%;
+}
+
+.main_block_inner:hover>i {
+    transform: rotate(0.25turn);
+}
+
+.main_block_inner>i {
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+    color: white;
+}
+
+.main_block_inner {
+    position: absolute;
+    z-index: 10;
+    top: 75px;
+    left: 5px;
+    padding: 10px 0 10px 0 !important;
+    background-color: #122344;
+    width: 250px;
+    font-size: 1rem;
+    font-family: "WalsheimBold";
+    text-align: left;
+    letter-spacing: 2px;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_block_inner>a {
+    color: white;
+    display: grid;
+    vertical-align: middle;
+    align-items: center;
+    height: 55px;
+    width: -webkit-fill-available;
+}
+
+.main_production_block>img {
+    width: 100%;
+    padding: 0 !important;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.main_block_inner:hover~#profnastil_sub-menu_prod,
+#profnastil_sub-menu_prod:hover {
+    transition: transform 0.5s, opacity 1s;
+    -webkit-transition: transform 0.5s, opacity 1s;
+    -moz-transition: transform 0.5s, opacity 1s;
+    -o-transition: transform 0.5s, opacity 1s;
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.main_block_inner:not(:hover)~#profnastil_sub-menu_prod,
+#profnastil_sub-menu_prod:not(:hover) {
+    transition: transform 0.75s, opacity 0.3s;
+    -webkit-transition: transform 0.75s, opacity 0.3s;
+    -moz-transition: transform 0.75s, opacity 0.3s;
+    -o-transition: transform 0.75s, opacity 0.3s;
+}
+
+#profnastil_sub-menu_prod {
+    position: absolute;
+    padding: 0 !important;
+    z-index: 100;
+    margin-left: 0;
+    top: 150px;
+    background-color: #122344;
+    left: 5px;
+    overflow: hidden;
+    transform-origin: top;
+    opacity: 0;
+    transform: scaleY(0);
+}
+
+.profnastil_sub-menu_item_prod {
+    padding: 10px 0 !important;
+    text-align: start;
+    font-family: "Comfortaa";
+    list-style-type: none;
+    font-size: 0.9rem;
+}
+
+.profnastil_sub-menu_item_prod>a {
+    font-size: 0.8rem;
+    padding-right: 80px;
+    color: #ececec;
+    padding: 10px 90px 10px 20px !important;
+    font-family: "Comfortaa";
+    font-size: 0.9rem;
+}
+
+.price_block {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #122344;
+    padding: 20px 0;
+    margin: 50px 0 0 0;
+    font-family: "Comfortaa";
+    font-size: 0.9rem;
+    border-radius: 20px;
+    border: solid 4px #00a0e0;
+    transition: transform 1s;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -o-transition: transform 1s;
+}
+
+.price_block:hover {
+    color: white !important;
+    transform: scale(0.97);
+}
+
+.price_block>h3 {
+    margin: 0;
+}
+
+.show {
+    display: block;
+}
+
+.scale_header {
+    height: auto !important;
+}
+
+.header_menu>.fa {
+    color: white;
+    margin-right: 20px !important;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url("./Comfortaa-VariableFont_wght.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "WalsheimReg";
+    src: url("./GTWalsheimPro-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "WalsheimBold";
+    src: url("./GTWalsheimPro-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
