@@ -98,16 +98,15 @@ body {
 .header_menu_content {
     user-select: none;
     background-color: #122344;
-    z-index: 90;
     height: 0;
     display: grid;
+    overflow: hidden;
 }
 
 .header_menu_content li {
     font-family: "Comfortaa";
     list-style-type: none;
     font-size: 0.9rem;
-    display: inline-block;
     cursor: pointer;
     color: #ffffff;
     border-top: solid 1px white;
