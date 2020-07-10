@@ -16,7 +16,8 @@ function toggleScaleById(id) {
 }
 function toggleScaleHeightAndRotate(id, rId) {
     document.getElementById(id).classList.toggle('scaleY');
-    document.getElementById(rId).classList.toggle('rotate');
+    if(rId)
+        document.getElementById(rId).classList.toggle('rotate');
     //tapAnywhereExcept(document.getElementById(id), document.getElementById(rId));
 }
 
