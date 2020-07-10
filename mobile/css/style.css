@@ -66,7 +66,7 @@ body {
     max-width: 1000px;
     background: #ffffff;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 
 .header_container {
@@ -265,8 +265,7 @@ td div {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0 !important;
     justify-content: center;
 }
 
@@ -275,7 +274,6 @@ td div {
     overflow: hidden;
     margin: 7px 7px 7px 7px !important;
     padding: 0 !important;
-    height: 200px !important;
     transition: all 0.6s;
     -webkit-transition: all 0.6s;
     -moz-transition: all 0.6s;
@@ -283,8 +281,12 @@ td div {
     position: relative;
 }
 
+.profnastil_content>a{
+    padding: 0 !important;
+}
+
 .profnastil_content_element img {
-    width: 250px;
+    width: 100%;
     padding: 0 !important;
     margin: auto;
     user-select: none;
@@ -752,11 +754,11 @@ a {
     max-height: 800px !important;
 }
 
-#ral_header::before{
+#ral_header::before {
     content: "Показать ";
 }
 
-.ral_header_show::before{
+.ral_header_show::before {
     content: "Скрыть " !important;
 }
 
