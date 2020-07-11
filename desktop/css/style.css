@@ -166,6 +166,13 @@ i:hover {
     padding-right: 0 !important;
 }
 
+.dobor_inner {
+    font-family: 'Comfortaa';
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: bold;
+}
+
 .content_element .content_head_img {
     width: 100%;
     user-select: none;
