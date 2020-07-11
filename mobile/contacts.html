@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 
-<head><meta http-equiv="Cache-Control" content="no-cache">
-<meta http-equiv="Cache-Control" content="max-age=300, must-revalidate">
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Cache-Control" content="max-age=300, must-revalidate">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,7 @@
     <title>Контакты производителя профнастила и металлочерепицы в Днепре</title>
     <meta name="Description"
         content="Контакты компании-производителя Тектум-С • Доставка заказов по всей Украине • Более 10-ти лет на рынке и заслуженная репутация среди множества клиентов.">
-    <link rel="alternate" media="only screen and (max-width: 800px)"  href="https://m.tectum-s.com.ua/gallery">
+    <link rel="canonical" href="https://tectum-s.com.ua/gallery">
     <meta name="keywords" content="форма обратной связи
     контакты
     профнастил
@@ -38,36 +39,25 @@
             mobile_prefix: "m"
         });</script>
 </head>
+<script src="https://use.fontawesome.com/d966391b3f.js"></script>
 
 <body>
     <div class="header_container">
-        <div class="phone" style="position: absolute;">
-            <span id="vodafone" class="mobo"> (050) 363-79-87</span>
-            <span id="kyivstar" class="mobo"> (067) 441-01-64</span>
-            <span id="lifecell" class="mobo"> (050) 482-80-37</span>
-        </div>
-        <a href="./index"><img alt="Тектум-С - производитель профнастила и металлочерепицы" src="res/logo.svg" style="width: inherit;"></a>
-        <div class="address" style="position: absolute;">
-            <div class="add">
-                <p>г. Днепр,<br>ул. Михаила Грушевского, 55</p>
-                <p><svg style="width: 21px; padding-right: 5px;" aria-hidden="true" focusable="false" data-prefix="fal"
-                        data-icon="envelope-open-text" role="img" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512" class="svg-inline--fa fa-envelope-open-text fa-w-16 fa-2x">
-                        <path fill="#061533"
-                            d="M352 248v-16c0-4.42-3.58-8-8-8H168c-4.42 0-8 3.58-8 8v16c0 4.42 3.58 8 8 8h176c4.42 0 8-3.58 8-8zm-184-56h176c4.42 0 8-3.58 8-8v-16c0-4.42-3.58-8-8-8H168c-4.42 0-8 3.58-8 8v16c0 4.42 3.58 8 8 8zm326.59-27.48c-1.98-1.63-22.19-17.91-46.59-37.53V96c0-17.67-14.33-32-32-32h-46.47c-4.13-3.31-7.71-6.16-10.2-8.14C337.23 38.19 299.44 0 256 0c-43.21 0-80.64 37.72-103.34 55.86-2.53 2.01-6.1 4.87-10.2 8.14H96c-17.67 0-32 14.33-32 32v30.98c-24.52 19.71-44.75 36.01-46.48 37.43A48.002 48.002 0 0 0 0 201.48V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V201.51c0-14.31-6.38-27.88-17.41-36.99zM256 32c21.77 0 44.64 16.72 63.14 32H192.9c18.53-15.27 41.42-32 63.1-32zM96 96h320v173.35c-32.33 26-65.3 52.44-86.59 69.34-16.85 13.43-50.19 45.68-73.41 45.31-23.21.38-56.56-31.88-73.41-45.32-21.29-16.9-54.24-43.33-86.59-69.34V96zM32 201.48c0-4.8 2.13-9.31 5.84-12.36 1.24-1.02 11.62-9.38 26.16-21.08v75.55c-11.53-9.28-22.51-18.13-32-25.78v-16.33zM480 464c0 8.82-7.18 16-16 16H48c-8.82 0-16-7.18-16-16V258.91c42.75 34.44 99.31 79.92 130.68 104.82 20.49 16.36 56.74 52.53 93.32 52.26 36.45.26 72.27-35.46 93.31-52.26C380.72 338.8 437.24 293.34 480 258.9V464zm0-246.19c-9.62 7.75-20.27 16.34-32 25.79v-75.54c14.44 11.62 24.8 19.97 26.2 21.12 3.69 3.05 5.8 7.54 5.8 12.33v16.3z"
-                            class=""></path>
-                    </svg>
-                    4410164@ukr.net</p>
-            </div>
-        </div>
+        <a href="./index"><img alt="Тектум-С - производитель профнастила и металлочерепицы" src="res/logo.svg"
+                style="width: inherit;"></a>
     </div>
 
+
     <div class="header_menu">
+        <i class="fa fa-bars" aria-hidden="true" onclick="toggleScaleByClassName('header_menu_content')"></i>
         <div class="header_menu_content">
             <li><a href="./index">Главная</a></li>
             <li><a href="./metallocherepitsa">Металлочерепица</a></li>
-            <li id="profnastil_menu-header"><a href="./profnastil">Профнастил</a>
+            <li id="profnastil_menu-header"><a onclick="toggleScaleById('profnastil_sub-menu')"><i
+                        class="fa fa-angle-down fa-lg" aria-hidden="true"
+                        style="padding-right: 20px;"></i>Профнастил</a>
                 <ul id="profnastil_sub-menu">
+                    <li class="profnastil_sub-menu_item"><a href="./profnastil">Общая информация</a></li>
                     <li class="profnastil_sub-menu_item"><a href="./profnastil/C-8">Профнастил С-8</a></li>
                     <li class="profnastil_sub-menu_item"><a href="./profnastil/C-10">Профнастил С-10</a></li>
                     <li class="profnastil_sub-menu_item"><a href="./profnastil/C-15">Профнастил С-15</a></li>
@@ -92,8 +82,8 @@
             <div class="contacts_info" style="padding-left: 0 !important; padding-right: 0 !important">
 
                 <div class="contacts-info" style="padding-left: 0 !important; padding-right: 0 !important">
-                    <h3 style="padding-top: 30px;">Главный офис:</h3>
-                    <p style="margin-left: 10px; padding-left: 60px !important; text-align: initial;">Украина, г. Днепр,
+                    <h3 style="padding-top: 15px;padding-left: 20px !important;">Главный офис:</h3>
+                    <p style="margin-left: 10px; padding-left: 10px !important; text-align: initial;">Украина, г. Днепр,
                         <br>ул. Михаила Грушевского, 55</p>
                     <h3>Адреса производственных мощностей:</h3>
                     <div class="dobor_functions" style="padding-left: 0 !important; padding-right: 0 !important;">
@@ -104,7 +94,7 @@
                             <p>г. Винница, ул. Гонты, 94</p>
                         </li>
 
-                        <h3 class="circle_">Номера:</h3>
+                        <h3 class="circle_" style="padding-left: 20px !important;">Номера:</h3>
 
                         <li>
                             <p>+38(050) 363-79-87</p>
@@ -130,13 +120,13 @@
                     <p><input id="email_inp" name="email" placeholder="Адрес электронной почты"></p>
                     <p><textarea id="description_inp" name="mail" placeholder="Дополнительная информация"></textarea>
                     </p>
-                    <p><input style="    width: 314px !important;
+                    <p><input style="
                         padding-left: 20px;
                         padding-right: 20px;
                         height: 36px;" id="form_inp_btn" type="submit" value="Отправить"></p>
                 </div>
             </div>
-            <iframe style="padding-top: 40px; padding-left: 0 !important; padding-right: 0 !important;"
+            <iframe style="padding-left: 0 !important; padding-right: 0 !important;"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13864.787210619868!2d35.033976269618194!3d48.458033934563545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe3219ed409bf%3A0x5f4a9e2ef5752d70!2z0YPQuy4g0JzQuNGF0LDQuNC70LAg0JPRgNGD0YjQtdCy0YHQutC-0LPQviwgNTUsINCU0L3QuNC_0YDQviwg0JTQvdC10L_RgNC-0L_QtdGC0YDQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDQ5MDAw!5e0!3m2!1sru!2sua!4v1589855948883!5m2!1sru!2sua"
                 width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                 tabindex="0"></iframe>
@@ -146,22 +136,25 @@
     </div>
 
     <div class="footer_container">
-        <div class="footer_container_content">
-            <li><a href="./index">Главная</a></li>
-            <li><a href="./metallocherepitsa">Металлочерепица</a></li>
-            <li><a href="./profnastil">Профнастил</a>
-            <li><a href="./dobornye_elementy">Доборные элементы</a></li>
-            <li><a href="./gladkiy_list">Гладкий лист</a></li>
-            <li><a href="./gallery">Галерея</a></li>
-            <li><a href="./contacts">Контакты</a></li>
-            <hr>
+        <div class="phone">
+            <span class="mobo">(050) 363-79-87</span>
+            <span class="mobo">(067) 441-01-64</span>
+            <span class="mobo">(050) 482-80-37</span>
         </div>
-        <a style="margin: 0; padding: 10px 70px;" class="price_block" href="./tecum_price.pdf">
+        <div class="address">
+            <div class="add">
+                <p>г. Днепр,<br>ул. Михаила Грушевского, 55</p>
+                <p style="padding-bottom: 10px; margin-bottom: 0 !important;"><i class="fa fa-envelope"
+                        aria-hidden="true" style="padding-right: 10px;"></i>4410164@ukr.net</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer_container_2">
+        <a style="margin: 10px; padding: 10px 70px;" class="price_block" href="./tecum_price.pdf">
             <h3>Прайс</h3>
         </a>
     </div>
-
-    <div class="footer_container_2"></div>
 
     <script
         src="https://www.jqueryscript.net/demo/Sliding-Growl-Notification-Plugin-For-jQuery-jsnotify/dist/js/notify.js"></script>
