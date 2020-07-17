@@ -69,9 +69,12 @@ body {
     padding-bottom: 10px;
 }
 
+.header{
+    color: black !important;
+}
+
 .header_container {
     position: relative;
-    display: flex;
     align-items: center;
     height: auto;
     max-width: 1300px;
@@ -87,6 +90,10 @@ body {
     margin-left: auto;
     margin-right: auto;
     user-select: none;
+}
+
+.header_container>a>img{
+    margin-top: 10px;
 }
 
 .header_menu {
@@ -281,7 +288,7 @@ td div {
     position: relative;
 }
 
-.profnastil_content>a{
+.profnastil_content>a {
     padding: 0 !important;
 }
 
@@ -431,7 +438,7 @@ td {
     padding: 30px !important;
 }
 
-.contacts-form>p{
+.contacts-form>p {
     padding: 0 !important;
 }
 
@@ -742,12 +749,25 @@ a {
     max-height: 800px !important;
 }
 
+#ral_header {
+    border-bottom: 1.5px dashed #2c2c2c;
+    color: #2c2c2c !important;
+    width: max-content;
+    padding: 0 0 5px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #ral_header::before {
     content: "Показать ";
 }
 
 .ral_header_show::before {
     content: "Скрыть " !important;
+}
+
+.contacts_number>p{
+    color: black;
 }
 
 @font-face {
